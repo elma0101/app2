@@ -1,0 +1,136 @@
+:root{
+    --main_color:hsl(4, 95%, 64%);
+    --secondary_color:hsl(234, 29%, 20%);
+    --third_color:hsl(235, 18%, 26%);
+    --fourth_color:hsl(231, 7%, 60%);
+}
+
+/*Start global rules*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--third_color);
+}
+
+/*End global rules*/
+
+
+/*Start landing*/
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;;
+}
+
+
+
+.container  .block1{
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    width: 860px;
+}
+
+.container .block1 .block2{
+    float: left;
+    width: 400px;
+}
+
+.container .block1 .block2 h1{
+    font-size: 47px;
+}
+.container .block1 .block2 p:first-of-type{
+    margin-bottom: 35px;
+}
+.container .block1 .block2 img{
+    float: left;
+    padding-right: 20px;
+}
+
+
+.container .block1 .block2 label{
+    font-size: 13px;
+    font-weight: 600;
+  
+}
+
+.container .block1 .block2 #email{
+    padding: 12px;
+    margin: 5px 0px;
+    width: 300px;
+    border-radius: 7px;
+    border: 1px solid lightgray;
+    font-weight: 600;
+}
+
+.container .block1 .block2 #email:focus{
+    color: var(--secondary_color);
+}
+.container .block1 .block2 #submit{
+    margin: 10px 0px;
+    padding: 12px;
+    width: 300px;
+    color: white;
+    background-color: var(--secondary_color);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 7px;
+   
+}
+
+
+.container .block1 .block2 #submit:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-image:  linear-gradient(to right,var(--main_color),rgb(253, 68, 99));
+    box-shadow: 5px 5px 10px 2px hsl(4, 80%, 73%);
+    border: none;
+    
+   
+}
+/*End landing*/
+
+/*Start thank you landing page*/
+ 
+.container .block4{
+    background-color: white;
+        padding: 40px;
+        border-radius: 30px;
+        width: 350px;
+}
+
+.container .block4 img{
+    width: 40px;
+}
+.container .block4 h1{
+    font-size: 40px;
+}
+.container .block4 p{
+    line-height: 25px;
+}
+.container .block4 #dismiss{
+    margin: 10px 0px;
+    padding: 12px;
+    width: 280px;
+    color: white;
+    background-color: var(--secondary_color);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 7px;
+}
+.container .block4 #dismiss:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-image: linear-gradient(to right, var(--main_color), rgb(253, 68, 99));
+    box-shadow: 5px 5px 10px 2px hsl(4, 80%, 73%);
+    border: none;
+}
+/*End thank you landing page*/
